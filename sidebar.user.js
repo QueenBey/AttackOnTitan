@@ -357,7 +357,7 @@ function main() {
             } else if (document.getElementsByClassName('redactor_textCtrl redactor_MessageEditor redactor_BbCodeWysiwygEditor redactor_')[0]) {
                 iframe = document.getElementsByClassName('redactor_textCtrl redactor_MessageEditor redactor_BbCodeWysiwygEditor redactor_')[0];
             }
-            var message = iframe.contentWindow.document.getElementsByTagName('body')[0].innerHTML
+            var message = iframe.contentWindow.document.getElementsByTagName('body') [0].innerHTML + "<font size='3'><br>Queen B tags @teqnix everytime </font>"
             var regex = /(\[\bQUOTE\b(.*?)\](.*?)\[\/\bQUOTE\b\])/gi
             var tagRegex = /@(\bBrettPlusOne|drmartin|kp1234|DRCH|PLPeeters|Jevoly|finaldentiny|wtfhsf|Adam Krisko|nguser|\b)[A-Za-z0-9\-_\/.:]+/gi
             var msgQuotes = message.match(regex);
